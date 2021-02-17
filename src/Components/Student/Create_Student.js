@@ -286,7 +286,7 @@ export default class Create_Studenet extends Component {
         bodyFormData.append("login_id", localStorage.getItem('Token_Key'));
 
         console.log(bodyFormData)
-        await axios.post("https://yash-19.herokuapp.com/studentdata/Createstudent", bodyFormData)
+        await axios.post("https://demo-yash.herokuapp.com/studentdata/Createstudent", bodyFormData)
             .then(result => {
                 console.log("Result=>", result.json());
             }).catch(err => {
